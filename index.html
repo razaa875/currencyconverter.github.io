@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD TO PKR</title>
+</head>
+<body> 
+    <h1>Currency Converter</h1>
+    <label> USD to PKR</label>
+        <input type="number" id="USD">
+        <br><br>
+        <button onclick="CurrencyCon()">Convert</button>
+       
+<h1 id="result"></h1>
+
+    <script>
+
+        
+        function CurrencyCon(){
+            let USD = document.getElementById("USD").value;
+            let PKR = 170.81;
+            let CONV = Number(USD) * Number(PKR);
+
+            document.getElementById("result").innerText = CONV;
+        }
+
+
+
+    </script>
+</body>
+</html>
